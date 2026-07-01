@@ -16,7 +16,7 @@ calculate.addEventListener("click", () => {
   // select your crush's name
   let crushName = document.querySelector("#crush-name").value;
   console.log(yourName, crushName);
-  if(((yourName == "Aftab" ||yourName=="aftab") && crushName=="")|| ((crushName=="Aftab" || crushName=="aftab")&&yourName=="") )
+  if(((yourName == "Aftab" ||yourName=="aftab") && crushName!="")|| ((crushName=="Aftab" || crushName=="aftab")&&yourName!="") )
   {
      msg.innerHTML="Please do not write Aftab";
   }
