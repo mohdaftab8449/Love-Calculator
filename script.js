@@ -12,11 +12,14 @@ let calculate = document.querySelector("#calculate");
 calculate.addEventListener("click", () => {
   // select your name
   let yourName = document.querySelector("#your-name").value;
-
+  
   // select your crush's name
   let crushName = document.querySelector("#crush-name").value;
   console.log(yourName, crushName);
-  
+  if(yourName == "Aftab" ||yourName=="aftab" || crushName=="Aftab" || crushName=="aftab")
+  {
+     msg.innerHTML="Please do not write Aftab";
+  }
   if(yourName != "" && crushName != ""){
     // generate random number
   let randomNumber=Math.floor(Math.random()*100 + 1)
